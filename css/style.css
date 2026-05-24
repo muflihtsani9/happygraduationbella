@@ -1035,12 +1035,9 @@ footer {
   display: block;
   grid-row: 1;
   border-radius: inherit;
-  filter: grayscale(100%);
-  transition: filter 0.4s ease;
 }
 
 .gallery-card:hover .gallery-img {
-  filter: grayscale(0%);
 }
 
 /* Caption sits below the image in grid row 2 */
