@@ -650,7 +650,7 @@ const UI = (() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(28px) saturate(1.4) brightness(0.28);
+  filter: blur(28px) grayscale(100%) brightness(0.28);
   transform: scale(1.15);
 }
 #cp-root.cp-playing .cp-bg-blur { opacity: 1; }
@@ -742,8 +742,9 @@ const UI = (() => {
   object-fit: cover;
   display: block;
   transition: transform 0.6s cubic-bezier(.23,1,.32,1), filter 0.4s ease;
+  filter: grayscale(100%);
 }
-#cp-root:hover .cp-cover { transform: scale(1.03); }
+#cp-root:hover .cp-cover { transform: scale(1.03); filter: grayscale(0%); }
 .cp-cover-overlay {
   position: absolute;
   inset: 0;
